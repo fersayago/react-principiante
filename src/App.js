@@ -1,4 +1,5 @@
 import "./App.css";
+import Mensaje from "./components/Mensaje";
 
 function App() {
   return (
@@ -8,8 +9,22 @@ function App() {
           <h1 class="display-4">Mi proyecto React</h1>
           <hr class="my-4" />
           <p class="lead">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus veritatis deserunt perspiciatis, iste dolorum ducimus sequi nisi voluptate placeat distinctio laboriosam nesciunt dolor voluptatibus. Illum atque eligendi eius deserunt quod.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+            veritatis deserunt perspiciatis, iste dolorum ducimus sequi nisi
+            voluptate placeat distinctio laboriosam nesciunt dolor voluptatibus.
+            Illum atque eligendi eius deserunt quod.
           </p>
+          <div className="row">
+            <div className="col-4">
+              <Mensaje mensaje="Mensaje N1 desde props" fondo="darkSeaGreen" />
+            </div>
+            <div className="col-4">
+              <Mensaje mensaje="Mensaje N2 desde props" fondo="darkSalmon" />
+            </div>
+            <div className="col-4">
+              <Mensaje mensaje="Mensaje N3 desde props" fondo="skyBlue" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
