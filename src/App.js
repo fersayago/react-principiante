@@ -1,4 +1,5 @@
 import "./App.css";
+import Contador from "./components/Contador";
 import Mensaje from "./components/Mensaje";
 
 function App() {
@@ -25,6 +26,11 @@ function App() {
               <Mensaje mensaje="Mensaje N3 desde props" fondo="skyBlue" />
             </div>
           </div>
+
+          <hr />
+
+          <Contador id="1" valor="123" fondo="purple"/>
+          <Contador id="2" valor="321" fondo="brown"/>
         </div>
       </div>
     </div>
